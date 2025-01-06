@@ -122,7 +122,7 @@ compose.desktop {
         mainClass = "com.plcoding.bookpedia.MainKt"
 
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
+            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb, TargetFormat.Exe)
             packageName = "com.plcoding.bookpedia"
             packageVersion = "1.0.0"
         }
