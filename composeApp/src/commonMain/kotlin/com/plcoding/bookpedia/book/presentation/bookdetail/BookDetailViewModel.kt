@@ -70,17 +70,17 @@ class BookDetailViewModel(
     }
 
     private fun fetchBookDescription() {
-//        viewModelScope.launch {
-//            bookRepository
-//                .getBookDescription(bookId)
-//                .onSuccess { description ->
-//                    _state.update { it.copy(
-//                        book = it.book?.copy(
-//                            description = description
-//                        ),
-//                        isLoading = false
-//                    ) }
-//                }
-//        }
+        viewModelScope.launch {
+            bookRepository
+                .getBookDescription(bookId)
+                .onSuccess { description ->
+                    _state.update { it.copy(
+                        book = it.book?.copy(
+                            description = description
+                        ),
+                        isLoading = false
+                    ) }
+                }
+        }
     }
 }
